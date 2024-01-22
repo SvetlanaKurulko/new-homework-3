@@ -13,49 +13,27 @@
 #         self._postal_code = postal_code
 #         self._phone_code = phone_code
 #
-#     def get_name(self):
-#         return self._name
+#     def display_info(self):
+#         print(f"City: {self._name}, Region: {self._region}, Country: {self._country}")
+#         print(f"Population: {self._population}, Postal Code: {self._postal_code}, Phone Code: {self._phone_code}")
 #
-#     def get_region(self):
-#         return self._region
 #
-#     def get_country(self):
-#         return self._country
+# city1 = City("Kyiv", "Kyiv Oblast", "Ukraine", 2800000, "02000", "+380")
+# city2 = City("Lviv", "Lviv Oblast", "Ukraine", 720000, "79000", "+380")
+# city3 = City("New York", "New York State", "USA", 8398748, "10001", "+1")
 #
-#     def get_population(self):
-#         return self._population
-#
-#     def get_postal_code(self):
-#         return self._postal_code
-#
-#     def get_phone_code(self):
-#         return self._phone_code
-#
-#     def set_name(self, name):
-#         self._name = name
-#
-#     def set_region(self, region):
-#         self._region = region
-#
-#     def set_country(self, country):
-#         self._country = country
-#
-#     def set_population(self, population):
-#         self._population = population
-#
-#     def set_postal_code(self, postal_code):
-#         self._postal_code = postal_code
-#
-#     def set_phone_code(self, phone_code):
-#         self._phone_code = phone_code
+# city1.display_info()
+# print("\n")
+# city2.display_info()
+# print("\n")
+# city3.display_info()
 
 
 
-
-# 2. Створіть клас "Країна". Необхідно зберігати в полях класу:
-#    назву країни, назву континенту, кількість жителів країни,
-#    телефонний код країни, назву столиці, назву міст країни.
-#    Реалізуйте доступ до окремих полів (Інкапсуляція).
+#   2.Створіть клас "Країна". Необхідно зберігати в полях класу:
+#   назву країни, назву континенту, кількість жителів країни,
+#   телефонний код країни, назву столиці, назву міст країни.
+#   Реалізуйте доступ до окремих полів (Інкапсуляція).
 
 
 # class Country:
@@ -67,38 +45,20 @@
 #         self._capital = capital
 #         self._cities = cities
 #
-#     def get_name(self):
-#         return self._name
+#     def display_info(self):
+#         print(f"Country: {self._name}, Continent: {self._continent}")
+#         print(f"Population: {self._population}, Phone Code: {self._phone_code}")
+#         print(f"Capital: {self._capital}")
+#         print("Cities:")
+#         for city in self._cities:
+#             print(f"{city['name']}, Population: {city['population']}")
 #
-#     def get_continent(self):
-#         return self._continent
+# cities_in_country = [
+#     {"name": "Kyiv", "population": 2800000},
+#     {"name": "Lviv", "population": 720000},
+#     {"name": "Kharkiv", "population": 8398748}
+# ]
 #
-#     def get_population(self):
-#         return self._population
+# country = Country("Ukraine", "Europe", 41850000, "+380", "Kyiv", cities_in_country)
 #
-#     def get_phone_code(self):
-#         return self._phone_code
-#
-#     def get_capital(self):
-#         return self._capital
-#
-#     def get_cities(self):
-#         return self._cities
-#
-#     def set_name(self, name):
-#         self._name = name
-#
-#     def set_continent(self, continent):
-#         self._continent = continent
-#
-#     def set_population(self, population):
-#         self._population = population
-#
-#     def set_phone_code(self, phone_code):
-#         self._phone_code = phone_code
-#
-#     def set_capital(self, capital):
-#         self._capital = capital
-#
-#     def set_cities(self, cities):
-#         self._cities = cities
+# country.display_info()
